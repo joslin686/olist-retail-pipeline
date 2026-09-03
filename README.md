@@ -51,13 +51,13 @@ All analysis queries are in [`sql/analysis/`](sql/analysis/), pulled into Python
 
 ### 1. Sales Trend Over Time
 
-*(insert chart: monthly revenue line chart)*
+![Monthly revenue trend](diagrams/sales_trend.png)
 
 Revenue grew steadily from early 2017 onward. One sharp anomaly stood out: **November 24, 2017 — Black Friday — saw 1,147 orders in a single day**, more than double the next-highest day that month. Order volume plateaued around 6,000–7,000 orders/month through mid-2018, suggesting the platform matured rather than continuing exponential growth.
 
 ### 2. Delivery Time vs. Review Score
 
-*(insert chart: bar chart, delivery days by star rating)*
+![Delivery time by review score](diagrams/delivery_vs_reviews.png)
 
 | Review Score | Avg. Delivery Time |
 |---|---|
@@ -71,13 +71,13 @@ A clean, monotonic relationship: 1-star orders took roughly **twice as long** to
 
 ### 3. Seller Performance
 
-*(insert chart: horizontal bar, top 10 sellers by revenue)*
+![Top 10 sellers by revenue](diagrams/top_sellers.png)
 
 Ranked sellers (min. 20 orders) by revenue, average review score, and average delivery time. Most top earners are well-reviewed (avg. 3.8–4.5 stars), and concentrated in São Paulo state. One notable exception: a top-5 seller by revenue had a below-average review score (3.35) paired with the slowest delivery time in the top 20 (21.9 days) — directly consistent with the delivery/review relationship found above, and a concrete, actionable flag for a real business (this seller's shipping process warrants review).
 
 ### 4. Customer Retention
 
-*(insert chart: pie chart, repeat vs one-time buyers)*
+![Repeat vs one-time buyers](diagrams/customer_retention.png)
 
 Only **3.0%** of customers (2,801 of 93,358) placed more than one order. The dataset's top spenders by total value were almost entirely one-time buyers of expensive items, not loyal repeat customers — total spend and customer loyalty are not the same thing here. Given Olist's marketplace model (many independent sellers, often selling infrequently-repurchased goods like furniture or electronics), a low repeat rate is unsurprising, but represents a clear growth lever: retention is a largely untapped opportunity.
 
